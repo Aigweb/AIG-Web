@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIG's Web</title>
+    <style>
+        body {
+            background-color: skyblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: red;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container input:focus {
+            border-color: red;
+            outline: none;
+        }
+
+        .next-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            float: right;
+        }
+
+        .next-button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO AIG'S WEB</h1>
+
+    <!-- Personal Information Section -->
+    <div class="form-container">
+        <h2>Personal Information</h2>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" placeholder="Enter your surname">
+
+        <label for="middleName">Middle Name:</label>
+        <input type="text" id="middleName" name="middleName" placeholder="Enter your middle name">
+
+        <label for="idNumber">ID No.:</label>
+        <input type="text" id="idNumber" name="idNumber" placeholder="Enter your ID number">
+    </div>
+
+    <!-- Account Information Section -->
+    <div class="form-container">
+        <h2>Account Information</h2>
+        <label for="accountNumber">Account Number:</label>
+        <input type="text" id="accountNumber" name="accountNumber" placeholder="Enter your account number">
+
+        <label for="bankName">Bank Name:</label>
+        <input type="text" id="bankName" name="bankName" placeholder="Enter your bank name">
+
+        <label for="accountName">Account Name:</label>
+        <input type="text" id="accountName" name="accountName" placeholder="Enter your account name">
+    </div>
+
+    <!-- Next Button -->
+    <button class="next-button" onclick="alert('Form submitted!')">Submit</button>
+</body>
+</html
